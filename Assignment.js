@@ -34,12 +34,14 @@ function hotelCost(perNight) {
 function megaFriend(friends) {
     if (typeof friends == 'object') {
         for (let i = 0; i < friends.length; i++) {
+            //Checking data type
             if (typeof friends[i] != 'string') {
                 return "Names should be string type value!";
             }
         }
         let max = friends[0].length;
         let index = 0;
+        //Finding the maximum 
         for (let i = 0; i < friends.length; i++) {
             if (friends[i].length > max) {
                 max = friends[i].length;
